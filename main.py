@@ -44,7 +44,7 @@ class ComprehensiveObjectTracker:
             "sky": ["sky", "cloud"],
             "people": ["person", "people"],
             "infrastructure": ["bridge", "fence", "wall", "pole", "traffic light", "sign"],
-            "terrain": ["field", "earth", "sand", "dirt", "soil", "ground"]
+            "terrain": ["field","sand, "dirt", "soil", "ground"]
         }
         
         # Define color scheme for each category
