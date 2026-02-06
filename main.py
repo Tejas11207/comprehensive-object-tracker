@@ -44,7 +44,7 @@ class ComprehensiveObjectTracker:
             "sky": ["sky", "cloud"],
             "people": ["person", "people"],
             "infrastructure": ["bridge", "fence", "wall", "pole", "traffic light", "sign"],
-            "terrain": ["field","sand, "dirt", "soil", "ground"]
+            "terrain": ["field", "sand", "dirt", "soil", "ground"]
         }
         
         # Define color scheme for each category
@@ -496,12 +496,6 @@ def main():
     results = tracker.detect_and_track_objects(
         image_path="village2.PNG",
         output_prefix="comprehensive_tracking"
-    )
-    
-    results2 = tracker.detect_and_track_objects(
-        image_path="village2.PNG",
-        Image_path="village2.PNG",
-        output_prefix="comprehensive_tracking2"
     )
     
     if results:
