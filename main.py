@@ -18,7 +18,7 @@ class ComprehensiveObjectTracker:
     
     def __init__(self):
         """Initialize segmentation models for comprehensive detection"""
-        print("🚀 Loading AI models for object detection...")
+        print("🚀 Loading models for object detection...")
         
         # Primary high-accuracy segmenter
         self.segmenter = pipeline(
