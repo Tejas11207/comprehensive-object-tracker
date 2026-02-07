@@ -36,20 +36,22 @@ class ComprehensiveObjectTracker:
         
         # Define comprehensive object categories
         self.object_categories = {
-            "buildings": ["building", "house", "skyscraper", "edifice", "tower", "apartment building"],
+            "House": [ "house"],
             "roads": ["road", "path", "street", "highway", "sidewalk", "crosswalk"],
+            #"Buildings":["apartment building","skyscraper","tower"],
             "vehicles": ["car", "truck", "bus", "van", "bicycle", "motorcycle", "vehicle"],
             "nature": ["mountain", "hill", "rock", "stone", "tree", "grass", "plant", "flower"],
-            "water": ["water", "sea", "river", "lake", "pool", "waterfall", "ocean", "pond"],
+            #"water": ["water", "sea", "river", "lake", "pool", "waterfall", "ocean", "pond"],
             "sky": ["sky", "cloud"],
             "people": ["person", "people"],
             "infrastructure": ["bridge", "fence", "wall", "pole", "traffic light", "sign"],
-            "terrain": ["field", "sand", "dirt", "soil", "ground"]
+            "terrain": ["field", "sand", "dirt", "soil", "ground"],
+            "Roof":["roof","tin","rcc"]
         }
         
         # Define color scheme for each category
         self.category_colors = {
-            "buildings": (255, 0, 0),        # Red
+            "House": (255, 0, 0),        # Red
             "roads": (128, 128, 128),        # Gray
             "vehicles": (255, 165, 0),       # Orange
             "nature": (0, 255, 0),           # Green
@@ -57,7 +59,8 @@ class ComprehensiveObjectTracker:
             "sky": (135, 206, 235),          # Sky Blue
             "people": (255, 255, 0),         # Yellow
             "infrastructure": (128, 0, 128), # Purple
-            "terrain": (139, 69, 19)         # Brown
+            "terrain": (139, 69, 19),         # Brown
+            "roof": (255, 20, 147)           # Pink
         }
         
         print("✅ Models loaded successfully!")
@@ -494,7 +497,7 @@ def main():
     
     # Run comprehensive detection
     results = tracker.detect_and_track_objects(
-        image_path="village2.PNG",
+        image_path="village.6.PNG",
         output_prefix="comprehensive_tracking"
     )
     
